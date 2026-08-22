@@ -1,0 +1,47 @@
+# --- Terraform ---
+# State contains every value in plaintext, including credentials.
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+# Variable files hold the Proxmox API token from W5.
+*.tfvars
+*.tfvars.json
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --- Credentials, keys, certs ---
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+.vault_pass
+vault-password*
+
+# --- Kubernetes ---
+# A kubeconfig is a credential.
+kubeconfig
+*.kubeconfig
+.kube/
+
+# --- Ansible ---
+*.retry
+# Decrypted vault output, if ever written to disk.
+*.decrypted.yml
+
+# --- Environment ---
+.env
+.env.*
+!.env.example
+
+# --- Editor and OS ---
+.DS_Store
+.vscode/
+.idea/
+*.swp
