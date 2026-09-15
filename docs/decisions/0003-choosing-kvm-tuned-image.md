@@ -1,0 +1,1 @@
+Chose the KVM-optimised kernel because this VM will only ever run under Proxmox/KVM; it strips bare-metal hardware drivers we'd never use, at the cost of portability if we ever wanted to run this same image on different virtualisation or bare metal later,acceptable since the project is Proxmox-only by design.
